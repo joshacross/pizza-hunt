@@ -1,5 +1,4 @@
 const { Schema, model } = require("mongoose");
-const Pizza = model('Pizza', PizzaSchema);
 
 
 //Schema
@@ -30,6 +29,8 @@ const PizzaSchema = new Schema({
 // pizza's toppings
     toppings: []
 });
+
+const Pizza = model('Pizza', PizzaSchema);
 
 //export Pizza model
 module.exports = Pizza;
