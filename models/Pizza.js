@@ -27,7 +27,13 @@ const PizzaSchema = new Schema({
         default: 'Large'
     },
 // pizza's toppings
-    toppings: []
+    toppings: [],
+    comments: [
+        {
+            type: Schema.Types.ObjectId,
+            ref: 'Comment'
+        }
+    ]
 });
 
 const Pizza = model('Pizza', PizzaSchema);
