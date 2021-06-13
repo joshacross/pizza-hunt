@@ -7,10 +7,14 @@ const PizzaSchema = new Schema({
 //Name of pizza
     pizzaName: {
         type: String
+        required: true,
+        trim: true
     },
 // name of the user that created the pizza
     createdBy: {
         type: String
+        required: true,
+        trim: true
     },
 // timestamp of when the pizza was created
     createdAt: {
